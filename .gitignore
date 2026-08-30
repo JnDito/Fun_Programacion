@@ -15,4 +15,7 @@ _pycache_/
 Properties/
 obj/
 bin/
-,vs/
+*vs/
+*.csproj
+*.slnx
+
