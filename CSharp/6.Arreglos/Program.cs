@@ -46,19 +46,10 @@ int[,] notas =
 Console.WriteLine(notas[1,3]);
 
 // Recorrer la matriz
-for (int filas = 0; filas < notas.GetLenght(0); filas++)
+for (int filas = 0; filas < notas.GetLength(0); filas++)
 {
-    for (int columnas = 0; columnas < notas.GetLenght(1); columnas++)
+    for (int columnas = 0; columnas < notas.GetLength(1); columnas++)
     {
         Console.WriteLine($"Fila: {filas}, Columna: {columnas} - Valor: {notas[filas,columnas]}");
     }
 }
-
-Console.WriteLine("Operacion con Arreglos");
-// Insercion
-
-// Busqueda
-
-// Modificacion
-
-// Eliminacion
