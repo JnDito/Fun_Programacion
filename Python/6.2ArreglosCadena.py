@@ -41,7 +41,7 @@ Mostrar primer y ultimo caracter del codigo
 Recorrer cada letra de la carrera
 Crear una etiqueta nueva agregando el semestre sin alterar la original
 """
-
+"""
 codigo = input("Ingresa su codigo: ")
 carrera = input("Ingrese su carrera: ")
 
@@ -61,4 +61,51 @@ print("Recorriendo la carrera")
 for i in range(len(carrera)):
     print(f'{i} -> {carrera[i]}')
 
-print(etiqueta_periodo)
+print(etiqueta_periodo)"""
+
+
+print("Metodos Trabajar con Cadenas")
+# Find
+nombre = "Juan,Vasquez"
+posicion_coma = nombre.find(",")
+
+print(f'La coma esta en la posicion: {posicion_coma}')
+
+# Slicing (Extraer subcadena)
+email = "juan.vr@sistemas.pe"
+posicion_arroba = email.find("@")
+usuario = email[:posicion_arroba]
+dominio = email[posicion_arroba + 1:]
+
+print(f'Usuario: {usuario}')
+print(f'Dominio: {dominio}')
+
+# Split
+nombre_curso = "BigData y Base de Datos Avanzada"
+partes = nombre_curso.split(" ")
+print(partes)
+print(partes[0])
+print(partes[1])
+print(partes[2])
+print(partes[3])
+print(partes[4])
+print(partes[5])
+
+# Replace
+telefono = "+51-987-654-321"
+telefono_clear = telefono.replace("-", ".")
+print(f"Telefono limpio: {telefono_clear}")
+
+# UPPER poner a mayusculas
+nombre_mayuscula = nombre.upper()
+print(nombre_mayuscula)
+
+# Lower poner en minusculas
+nombre_minuscula = nombre.lower()
+print(nombre_minuscula)
+
+# Strip (Espacios en blanco innecesarios al inicio y al final)
+palabra = "    Aprendiendo Pytron       "
+palabra_limpia = palabra.strip()
+
+print(f'{palabra_limpia}')
