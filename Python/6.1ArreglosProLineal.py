@@ -29,9 +29,9 @@ for i in range(len(notas2) - 1):
 print(notas2)
 
 print("Usando Sort")
-
 precios = [20.1, 0.67, 14.3, 1.76, 100.34, 30.20, 9.99]
-print(f"{precios.sort()}")
+precios.sort()
+print(precios)
 
 edades = [20, 5, 35, 16, 99, 12, 0]
 print("Usando Sorted()")
