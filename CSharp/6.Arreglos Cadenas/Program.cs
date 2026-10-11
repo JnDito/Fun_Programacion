@@ -1,5 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.Marshalling;
+﻿
 
 Console.WriteLine("Arreglo de Cadenas en C#");
 
